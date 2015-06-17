@@ -24,11 +24,11 @@ module.exports = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Out of the box I include Polymer Starter Kit'));
+    this.log(yosay('Digipolis Polymer generator'));
 
     var prompts = [{
         name: 'includeWCT',
-        message: 'Would you like to include web-component-tester?',
+        message: 'Would you like to include web-component-testerrrr?',
         type: 'confirm'
       }];
 

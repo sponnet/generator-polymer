@@ -1,46 +1,31 @@
-[![NPM version](http://img.shields.io/npm/v/generator-polymer.svg?style=flat)](http://npmjs.org/generator-polymer)
-[![NPM downloads](http://img.shields.io/npm/dm/generator-polymer.svg?style=flat)](http://npmjs.org/generator-polymer)
-[![Build Status](http://img.shields.io/travis/yeoman/generator-polymer/master.svg?style=flat)](https://travis-ci.org/yeoman/generator-polymer)
-[![Dependency Status](http://img.shields.io/david/yeoman/generator-polymer.svg?style=flat)](https://david-dm.org/yeoman/generator-polymer)
+## Yeoman generator for ASTAD Polymer projects
 
-## Yeoman generator for Polymer projects
-
-<img src="http://i.imgur.com/dsFChIk.png"/>
-
-## Introduction
-
-[Polymer](http://www.polymer-project.org/) is a library of polyfills and sugar which enable the use of Web Components in modern browsers. The project allows developers to build apps using the platform of tomorrow and inform the W3C of places where in-flight specifications can be further improved.
-
-`generator-polymer` provides Polymer scaffolding using [Yeoman](http://yeoman.io) (a scaffolding tool for the web), letting you easily create and customize Polymer (custom) elements via the command-line and import them using HTML Imports. This saves you time writing boilerplate code so you can start writing up the logic to your components straight away.
 
 ## Features
 
 * A Polymer app scaffold built with [Polymer Starter Kit](https://developers.google.com/web/tools/polymer-starter-kit/)
 * Sub-generator to create Polymer elements for your app
-* Quick deploy to GitHub pages
-* All the goodness of [seed-element](https://github.com/polymerelements/seed-element) (docs & landing page for your element)
 * [web-component-tester](https://github.com/Polymer/web-component-tester) support
+* scaffold for a nodeJS backend
+* API-First design using swagger template
 
-## Issues
-
-This generator clones [Polymer Starter Kit](https://github.com/PolymerElements/polymer-starter-kit) and [seed-element](https://github.com/polymerelements/seed-element). if you're having issues with the template files generated for those projects, please raise them on those repos as they are the canonical source.
 
 ## Installation
 
 Install the generator
-`npm install -g generator-polymer`
+`npm install -g git+ssh://git@github.com:sponnet/generator-polymer.git`
 
 Make a new directory and cd into it
 `mkdir -p my-project && cd $_`
 
 Scaffold a new Polymer project:
-`yo polymer`
+`yo astad`
 
 ## Generators
 
 Available generators:
 
-- [polymer (aka polymer:app)](#app)
+- [astad (aka astad)](#app)
 - [polymer:element](#element-alias-el)
 - [polymer:seed](#seed)
 - [polymer:gh](#gh)
@@ -52,7 +37,7 @@ Sets up a new Polymer app, generating all the boilerplate you need to get starte
 
 Example:
 ```bash
-yo polymer
+yo astad
 ```
 
 ### Element (alias: El)
@@ -129,11 +114,6 @@ See the [web-component-tester readme](https://github.com/Polymer/web-component-t
 
 The `app` generator will produce an `elements.html` file where you can place your imports. This file will be [vulcanized](https://www.polymer-project.org/articles/concatenating-web-components.html) when you run the default `gulp` task. **You'll want to make sure that elements.html is the only import in your index.html file, otherwise there's a good chance you'll accidentally load Polymer twice and break the app**.
 
-## Contribute
-
-See the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)
-
-When submitting an issue, please follow the [guidelines](https://github.com/yeoman/yeoman/blob/master/contributing.md#issue-submission). Especially important is to make sure Yeoman is up-to-date, and providing the command or commands that cause the issue.
 
 ## License
 

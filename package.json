@@ -1,17 +1,15 @@
 {
-  "name": "generator-polymer",
+  "name": "generator-astad",
   "version": "1.0.4",
-  "description": "Scaffold out a Polymer project",
+  "description": "Scaffold out an ASTAD Polymer project",
   "keywords": [
-    "yeoman-generator",
     "scaffold",
     "framework",
     "mvc",
     "polymer"
   ],
-  "author": "Chrome Developer Relations",
+  "author": "Digipolis",
   "main": "app/index.js",
-  "repository": "yeoman/generator-polymer",
   "scripts": {
     "test": "jshint {app,el,gh,seed}/*.js && mocha --reporter spec"
   },
